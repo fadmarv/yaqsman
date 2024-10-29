@@ -1,0 +1,230 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.servicehero {
+    height: 600px;
+    position: relative;
+}
+
+.servicehero .des {
+    position: absolute;
+    bottom: -24px;
+    left: 60px;
+}
+
+.servparent {
+    margin: auto;
+    /* border: 1px solid red; */
+    width: 91vw;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 2rem;
+}
+
+.servparent .servdiv , .servdivn {
+    width: 600px;
+    height: 400px;
+    /* border: 1px solid; */
+}
+
+.servdivn header {
+    /* border: 1px solid blue; */
+    display: grid;
+}
+
+.servdivn h2 {
+    font-weight: 500;
+    word-spacing: .8rem;
+    font-size: 28px;
+}
+
+.servdiv svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ddiv2 {
+    margin: auto;
+    margin-top: 2rem;
+    width: 90vw;
+    position: relative;
+    /* border: 1px solid green; */
+}
+.sersection3 {
+    margin: auto;
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    width: 90vw;
+    height: fit-content;
+}
+
+.main1 {
+    width: inherit;
+    display: inherit;
+    height: fit-content;
+}
+
+.banner {
+    position: relative;
+    width: inherit;
+    height: 300px;
+    background-image: url(serv1.png);
+    background-size: contain;
+}
+
+.banner2 {
+    position: relative;
+    width: inherit;
+    height: 300px;
+    background-image: url(serv2.png);
+    background-size: contain;
+}
+
+.banner3 {
+    position: relative;
+    width: inherit;
+    height: 300px;
+    background-image: url(serv3.png);
+    background-size: contain;
+}
+
+.banner4 {
+    position: relative;
+    width: inherit;
+    height: 300px;
+    background-image: url(serv4.png);
+    background-size: contain;
+}
+
+.banner5 {
+    position: relative;
+    width: inherit;
+    height: 300px;
+    background-image: url(serv5.png);
+    background-size: contain;
+}
+
+.banner-txt {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    background-color: white;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #FA5D11;
+}
+
+.main-txt {
+    width: inherit;
+    height: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.txt1 {
+    width: 500px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.txt1 span {
+    font-weight: bold;
+}
+
+.subtxt span {
+    font-weight: bold;
+}
+
+.txt2 {
+    width: 710px;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.txt2 span {
+    font-weight: bold;
+}
+
+.subtxt {
+    margin-top: 1rem;
+    width: inherit;
+    font-size: 20px;
+}
+
+.tritxt {
+    margin-top: 1rem;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 20px;
+}
+
+.tx {
+    margin-right: 4rem;
+}
+
+@media(max-width: 1024px) {
+    .servparent {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .servparent .servdiv , .servdivn {
+        width: 90vw;
+        height: 200px;
+    }
+
+    .servdivn h2 {
+        font-size: small;
+    }
+    .herosection {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    .carousel {
+        width: inherit;
+        height: inherit;
+        /* background-color: red; */
+    }
+    .carousel-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .tritxt {
+        display: grid;
+        gap: 1rem;
+    }
+    .banner , .banner2 , .banner3 , .banner4 , .banner5 {
+        height: 200px;
+        background-size: cover;
+    }
+    .banner-txt {
+        font-size: 16px;
+        width: 80vw;
+        text-align: center;
+        right: 20px;
+    }
+    .main-txt {
+        display: grid;
+    }
+    .txt1 , .txt2 {
+        width: inherit;
+    }
+}

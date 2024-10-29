@@ -1,0 +1,54 @@
+.teamhero {
+    background-color: blue;
+    height: 600px;
+    position: relative;
+}
+
+.teamhero .des {
+    position: absolute;
+    bottom: -23px;
+    left: 60px;
+}
+
+.teamsection {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamsection header {
+    /* border: 1px solid; */
+    width: fit-content;
+    /* margin-left: 1.8rem; */
+}
+
+.peoplecard {
+    /* border: 1px solid; */
+    width: 90vw;
+    margin-bottom: 7rem;
+}
+
+.peoplecard svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .herosection {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    .carousel {
+        width: inherit;
+        height: inherit;
+        /* background-color: red; */
+    }
+    .carousel-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}

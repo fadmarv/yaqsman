@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color: #FA5D11E5;
+}
+
+.navbar {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    background-color: #FA5D11E5;
+    position: fixed;
+    width: 100vw;
+    padding: 0rem 7rem 1rem 7rem;
+    z-index: 999;
+    height: 130px;
+    /* padding-top: 30rem; */
+}
+
+.ll {
+    position: relative;
+    top: 24px;
+    width: 150px;
+    border-radius: 10px ;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.logo {
+    width: 130px;
+    /* border-radius: 20px; */
+    height: 120px;
+    /* border: 1px solid black; */
+}
+
+.logo svg{
+    /* margin-top: 3rem; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: white;
+}
+
+.navlinks {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.navlinks a {
+    color: white;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.navlinks a:hover {
+    color: rgb(85, 85, 85);
+    text-shadow: 1px 1px 1px gold;
+}
+
+#ham {
+    display: none;
+}
+
+.herosection {
+    /* border: 1px solid blue; */
+    /* background-color: blue; */
+    height: 600px;
+}
+
+.section2 {
+    margin: auto;
+    margin-top: -4rem;
+    width: 85vw;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid black; */
+}
+
+.card svg {
+    width: 100%;
+    height: 100%;
+}
+
+.section3 {
+    margin: auto;
+    margin-top: 4rem;
+    /* border: 1px solid red; */
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+}
+
+.tcard {
+    width: 600px;
+    height: 700px;
+    /* border: 1px solid; */
+    position: relative;
+    margin-top: 3rem;
+}
+
+.tcard svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 0px;
+}
+
+.txtcard {
+    width: 500px;
+    height: 300px;
+    /* border: 1px solid;  */
+    margin-top: -2rem; 
+}
+
+.des {
+    /* border: 1px solid; */
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    width: fit-content;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.des svg {
+    position: absolute;
+    left: 0;
+
+}
+
+.txx {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 430px;
+    margin-top: 1rem;
+}
+
+.txx svg {
+    width: 10px;
+    height: 50px;
+}
+
+.txx p {
+    /* border: 1px solid; */
+    width: 400px;
+}
+
+.etx {
+    margin: auto;
+    width: 420px;
+    color: gray;
+    line-height: 1.2rem;
+    margin-top: 1rem;
+}
+
+.cta {
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    border: 1px solid black;
+    transition: .5s;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+}
+
+.l-r {
+    width: 0;
+    stroke: white !important;
+}
+
+.l-l , .l-r {
+    transition: .5s;
+}
+
+.cta:hover {
+    background-color: #FA5D11E5;
+    color: white;
+
+    .l-l {
+        width: 0;
+    }
+    .l-r {
+        width: 60px;
+    }
+}
+
+.section4 {
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 7rem;
+}
+
+.heading {
+    /* border: 1px solid; */
+    width: fit-content;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+
+.heading h1 {
+    position: absolute;
+    left: 30px;
+    width: 200px;
+}
+
+.sideln {
+    margin-top: 3rem;
+    padding: 10px;
+    /* border: 1px solid red; */
+    width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sideln .cardln {
+    border: 1px solid;
+    width: 330px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.cardln:hover {
+    background-color: black;
+    color: white;
+}
+
+.cardln p {
+    width: 200px;
+    margin-top: 1rem;
+    font-weight: 550;
+}
+
+footer {
+    margin-top: 13rem;
+    height: 300px;
+    background-color: #FA5D11;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ff {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    width: 80vw;
+}
+
+.flogo {
+    /* border: 1px solid; */
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.flogo p{
+    width: 130px;
+    color: white;
+}
+
+.offer {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: fit-content;
+    height: 200px;
+}
+
+.offer h2 {
+    margin-left: 10px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.offer p {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    /* border: 1px solid; */
+    color: white;
+}
+
+.offer a {
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 550;
+    transition: .5s;
+}
+
+.offer a:hover {
+    color: rgb(85, 85, 85);
+    text-shadow: 1px 1px 1px gold;
+}
+
+.social h2 {
+    letter-spacing: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.social {
+    /* border: 1px solid; */
+    margin-left: -3rem;
+}
+
+.sociall {
+    margin-top: 0.6rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+  
+.carousel {
+    width: inherit;
+    height: inherit;
+    /* background-color: red; */
+}
+
+.carousel-image {
+    width: inherit;
+    height: inherit;
+}
+
+.carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section4 a {
+    text-decoration: none;
+    color: black;
+}
+  
+.up {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1rem 1rem 1rem 1rem;
+        align-items: center;
+    }
+    .ll {
+        width: 150px;
+        height: 100px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px; 
+    }
+    .navlinks {
+        display: grid;
+        align-items: center;
+        justify-content: space-around;
+        /* border: 1px solid; */
+        width: fit-content;
+        margin-top: 2rem;
+        row-gap: .2rem;
+    }
+    .navlinks a {
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    #ham {
+        display: none;
+    }
+    .section3 {
+        display: grid;
+    }
+    .tcard {
+        width: 80vw;
+        height: 500px;
+    }
+    .txtcard {
+        display: grid;
+        width: 80vw;
+    }
+    .txx {
+        width: 90vw;
+    }
+    .txx p {
+        width: 80vw;
+    }
+    .etx {
+        /* text-align: center; */
+        width: 80vw;
+    }
+    .section4 {
+        display: grid;
+    }
+    .sideln {
+        /* border: 1px solid; */
+        /* display: grid; */
+        width: 90vw;
+    }
+    footer {
+        height: fit-content;
+        padding-bottom: 5rem;
+    }
+    .ff {
+        width: 90vw;
+        display: grid;
+        align-items: start;
+        gap: 2rem;
+    }
+    .social {
+        margin: 0;
+    }
+    .herosection {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    .carousel {
+        width: inherit;
+        height: inherit;
+        /* background-color: red; */
+    }
+    .carousel-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}

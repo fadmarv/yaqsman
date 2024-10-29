@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.abouthero {
+    height: 600px;
+    position: relative;
+}
+
+.des {
+    position: absolute;
+    bottom: -8px;
+    left: 60px;
+}
+
+.aboutsection2 header {
+    padding-left: 4rem;
+}
+
+.aboutsection2 .sec2div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 3rem;
+    padding-right: 6rem;
+}
+
+.sec2div .sec2txt {
+    /* border: 1px solid; */
+    width: 600px;
+    line-height: 2rem;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.aboutsection3 {
+    background-color: #d9d9d9;
+    padding: 2rem;
+}
+
+.aboutsection3 header {
+    margin: auto;
+    /* border: 1px solid; */
+    width: 500px;
+    /* margin-bottom: 1rem; */
+}
+
+.aboutsection3 header svg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutsection3 .content {
+    margin: auto;
+    width: 80vw;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    /* justify-content: start; */
+    position: relative;
+}
+
+.content svg {
+    position: relative;
+    height: 1703px !important;
+    top: 0;
+}
+
+.aboutsection3 svg {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutsection4 {
+    /* border: 1px solid; */
+    position: relative;
+}
+
+.aboutsection4 header {
+    margin-left: 7rem;
+    /* border: 1px solid red; */
+    width: fit-content;
+    display: grid;
+}
+
+.aboutcta {
+    position: absolute;
+    right: 90px;
+    top: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.aboutcta:hover rect{
+    fill: black;
+}
+
+.member {
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    row-gap: 20px;
+}
+
+.member .memcard {
+    /* border: 1px solid blue; */
+    width: 350px;
+    height: 400px;
+}
+
+.memcard svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .aboutsection2 .sec2div {
+        margin: auto;
+        display: grid;
+        align-items: center;
+        justify-content: space-around;
+        /* gap: 1rem; */
+        width: 90vw;
+        padding: 0;
+    }
+    .sec2div .sec2txt {
+        width: inherit;
+        font-size: small;
+        line-height: 1.2rem;
+    }
+    .sec2img {
+        width: 80vw;
+    }
+    .sec2img svg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .aboutsection3 {
+        padding: 0;
+        height: fit-content;
+    }
+
+    .aboutsection3 .content {
+        margin: auto;
+        width: 95vw;
+        height: 500px;
+        /* border: 1px solid; */
+        display: flex;
+        align-items: center;
+    }
+
+    .content svg {
+        /* position: relative; */
+        height: 800px !important;
+        top: 0;
+    }
+    
+    .aboutsection3 svg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .aboutsection3 header {
+        margin: auto;
+        /* border: 1px solid; */
+        width: 80vw;
+        margin-bottom: 1rem;
+    }
+    .aboutsection4 header {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        /* border: 1px solid red; */
+        width: fit-content;
+        display: grid;
+    }
+    
+    .aboutcta {
+        position: absolute;
+        right: 30px;
+        top: 70px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .member {
+        margin-top: 3rem;
+    }
+    .herosection {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    .carousel {
+        width: inherit;
+        height: inherit;
+        /* background-color: red; */
+    }
+    .carousel-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}

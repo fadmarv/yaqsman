@@ -1,0 +1,153 @@
+.contacthero {
+    height: 600px;
+    position: relative;
+}
+
+.contacthero .des {
+    position: absolute;
+    bottom: -24px;
+    left: 60px;
+}
+
+.contactsec1 {
+    margin: auto;
+    margin-top: 4rem;
+    /* border: 1px solid red; */
+    width: 80vw;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.form {
+    margin: auto;
+    width: 90vw;
+    /* border: 1px solid red; */
+    height: fit-content;
+    margin-top: 4rem;
+    background-color: #FCAE88;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.form header{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(20, 20, 20);
+    margin-bottom: 1.5rem;
+}
+
+.formf {
+    margin: auto;
+    width: 85vw;
+    /* border: 1px solid blue; */
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.formf .inp {
+    /* border: 1px solid red; */
+    display: grid;
+    padding: 10px;
+}
+
+.inp label{
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.inp input {
+    padding: 10px;
+    width: 500px;
+    height: 50px;
+    border: none;
+}
+
+.ry {
+    grid-column: 1 / 3;
+}
+
+.ry textarea{
+    padding: 10px;
+    width: 79vw;
+    height: 300px;
+    border: none;
+}
+
+
+
+.form button {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 10px;
+    width: 500px;
+    border-radius: 13px;
+    background-color: #FA5D11;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.39);
+}
+
+.form button:hover {
+    background-color: black;
+}
+
+.map {
+    margin: auto;
+    width: 90vw;
+    /* height: 500px; */
+}
+
+.map svg {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    margin-top: 0;
+}
+
+@media(max-width: 1024px) {
+    .contactsec1 {
+        flex-direction: column;
+    }
+    .rdd {
+        width: 300px;
+    }
+    .formf {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .inp input {
+        padding: 10px;
+        width: 79vw;
+        border: none;
+    }
+    .form button {
+        width: 70vw;
+    }
+    .herosection {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    .carousel {
+        width: inherit;
+        height: inherit;
+        /* background-color: red; */
+    }
+    .carousel-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
